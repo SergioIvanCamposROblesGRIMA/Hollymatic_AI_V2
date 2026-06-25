@@ -1,0 +1,79 @@
+version: '2.4'  # ¡IMPORTANTE! Versión mínima requerida
+
+services:
+  app:
+    build: .
+    privileged: true
+    restart: always
+    environment:
+      - APP_PATH=/app
+      - INSIDE_CONTAINER=true
+      - BBOX_MAX_ASPECT_RATIO
+      - BRIGHTNESS_THRESHOLD
+      - CALIBRATE_PIN
+      - CAMERA_PATHS
+      - CLASSIFICATION_MODEL_PATH
+      - CORE_NAME_MAIN
+      - ECCENTRIC_LEVER_AND_KO_CUP_MODEL_PATH
+      - FOCUS_THRESHOLD
+      - GCP_SA_B64
+      - GOOGLE_CHAT_WEBHOOK_URL
+      - KO_CUP_MODEL_PATH
+      - LOCK_PIN_MODEL_PATH
+      - LOCK_SHAFT_MODEL_PATH
+      - MAIN_LOG_FILE
+      - MIKASA_IP
+      - MIKASA_PASSWORD
+      - MIKASA_USERNAME
+      - MIN_CONFIDENCE
+      - RAM_ASSEMBLY_AND_DRIVE_BAR_MODEL_PATH
+      - ROOT_PROYECT_NAME
+      - SERVICE_ACCOUNT_PATH=/secrets/gcp_service_account.json
+      - SHUT_DOWN_PIN
+      - SPACE_ID
+      - TURN_ON_PIN
+      - ZENITHAL_ASSEMBLY_MODEL_PATH
+      - SUCURSAL
+      - RCLONE_CONFIG_GDRIVE_CLIENT_ID
+      - RCLONE_CONFIG_GDRIVE_CLIENT_SECRET
+      - RCLONE_CONFIG_GDRIVE_TEAM_DRIVE
+      - RCLONE_CONFIG_GDRIVE_SERVICE_ACCOUNT_FILE
+      - BRANCH
+      
+    labels:
+      io.balena.features.supervisor-api: '1'
+      io.balena.features.camera: '1'
+    tmpfs:
+      - /secrets:size=10m,mode=700
+    devices:
+      - "/dev/video0:/dev/video0"
+      - "/dev/video2:/dev/video2"
+      - "/dev/video4:/dev/video4"
+      - "/dev/gpiomem:/dev/gpiomem"
+      - "/dev/snd:/dev/snd"
+
+    volumes:
+      - datos_de_app:/data  
+
+  scheduler:
+    build: ./scheduler
+    restart: always
+    network_mode: host          
+    tmpfs:
+      - /secrets:size=10m,mode=700 
+    devices:
+      - "/dev/snd:/dev/snd"
+
+    environment:
+      - TZ=America/Los_Angeles
+      - MIKASA_IP
+      - MIKASA_USERNAME
+      - MIKASA_PASSWORD
+      - GCP_SA_B64                                  
+      - SPACE_ID                                    
+      - SERVICE_ACCOUNT_PATH=/secrets/service-account.json
+
+volumes:
+  datos_de_app: {}
+
+

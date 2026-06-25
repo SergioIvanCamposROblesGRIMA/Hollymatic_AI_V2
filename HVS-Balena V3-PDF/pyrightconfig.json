@@ -1,0 +1,13 @@
+{
+    "typeCheckingMode": "standard",
+    "executionEnvironments": [
+        {
+            "root": ".start.sh",
+            "extraPaths": ["./app/"]
+        },
+        {
+            "root": ".",
+            "extraPaths": ["."]
+        }
+    ]
+}

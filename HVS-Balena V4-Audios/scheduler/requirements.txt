@@ -1,0 +1,8 @@
+APScheduler==3.10.4
+pywizlight==0.6.3
+python-kasa==0.10.2                
+google-auth==2.40.3                
+google-api-python-client==2.171.0
+dotenv==0.9.9
+matplotlib==3.10.3
+python-dateutil==2.9.0.post0
