@@ -1,0 +1,157 @@
+====================================================================
+ API DE CALIBRACION REMOTA DE LA HOLLYMATIC  (servicio `api`, FastAPI)
+ Pasos de ejecucion
+====================================================================
+
+QUE ES
+------
+Contenedor ligero (FastAPI + uvicorn) que expone 3 rutas para disparar la
+calibracion de la Hollymatic de forma remota y autenticada. Controla el
+enchufe Kasa (KP200) por la LAN (MIKASA_IP:9999). No usa base de datos,
+camara ni GPIO.
+
+Rutas:
+  POST /auth/login    -> devuelve access_token + refresh_token
+  POST /auth/refresh  -> devuelve un nuevo access_token
+  POST /calibrate     -> (protegida) enciende el enchufe, espera 45 s y lo apaga
+  GET  /docs          -> documentacion interactiva (Swagger)
+
+
+--------------------------------------------------------------------
+0) REQUISITOS
+--------------------------------------------------------------------
+- Docker y Docker Compose instalados.
+- Estar en la carpeta raiz del proyecto (la que contiene docker-compose.yml):
+      cd "/ruta/al/proyecto/HVS-Ubuntu-V6 ZohoCreator"
+- El enchufe Kasa accesible en la red (variables MIKASA_IP / MIKASA_USERNAME /
+  MIKASA_PASSWORD ya definidas en .env).
+
+
+--------------------------------------------------------------------
+1) CONFIGURAR LAS CREDENCIALES (.env)  -- solo la primera vez
+--------------------------------------------------------------------
+En el archivo .env (raiz del proyecto) deben estar rellenas estas variables:
+
+    JWT_SECRET_KEY               (secreto para firmar los JWT)
+    ACCESS_TOKEN_EXPIRE_MINUTES  = "30"
+    REFRESH_TOKEN_EXPIRE_DAYS    = "7"
+    API_USERNAME                 = "hollymatic"
+    API_PASSWORD_HASH            (hash bcrypt del password, EN BASE64)
+
+Para generar el secreto JWT:
+    python -c "import secrets; print(secrets.token_urlsafe(48))"
+
+Para generar el hash del password (IMPORTANTE: en base64, porque docker compose
+interpreta los '$' del hash bcrypt y lo corromperia):
+    python -c "import bcrypt,base64; print(base64.b64encode(bcrypt.hashpw(b'TU_PASSWORD', bcrypt.gensalt())).decode())"
+
+  -> Copia la salida y pegala en API_PASSWORD_HASH del .env.
+  -> 'TU_PASSWORD' es la contrasena que luego usaras en /auth/login (en claro).
+
+Si no tienes python a mano, puedes generarlos con la propia imagen (ver paso 2
+primero para construirla):
+    docker run --rm hvs-ubuntu-v6zohocreator-api python -c "import secrets; print(secrets.token_urlsafe(48))"
+    docker run --rm hvs-ubuntu-v6zohocreator-api python -c "import bcrypt,base64; print(base64.b64encode(bcrypt.hashpw(b'TU_PASSWORD', bcrypt.gensalt())).decode())"
+
+
+--------------------------------------------------------------------
+2) CONSTRUIR Y LEVANTAR (desarrollo)
+--------------------------------------------------------------------
+Construir la imagen:
+    docker compose build api
+
+Levantar el servicio en segundo plano:
+    docker compose up -d api
+
+Ver los logs (esperar a "Uvicorn running on http://0.0.0.0:8000"):
+    docker compose logs -f api
+
+Comprobar que responde:
+    abrir en el navegador  http://localhost:8000/docs
+
+NOTA sobre el puerto:
+  El servicio publica 8000:8000. Si el puerto 8000 del host ya esta ocupado por
+  otro servicio, cambia el mapeo en docker-compose.yml (p.ej. "8080:8000") o
+  libera el 8000.
+
+
+--------------------------------------------------------------------
+3) USAR LA API  (ejemplos con curl)
+--------------------------------------------------------------------
+Sustituye <PASSWORD> por la contrasena en claro configurada en el paso 1
+y <HOST> por localhost (o la IP del equipo).
+
+3.1) LOGIN -> obtener tokens
+    curl -X POST http://<HOST>:8000/auth/login \
+         -d "username=hollymatic&password=<PASSWORD>"
+
+  Respuesta (200):
+    {"access_token":"...","refresh_token":"...","token_type":"bearer"}
+
+  Guarda el access_token (dura 30 min) y el refresh_token (dura 7 dias).
+
+3.2) CALIBRAR -> dispara la secuencia (encender 45 s y apagar)
+    curl -X POST http://<HOST>:8000/calibrate \
+         -H "Authorization: Bearer <ACCESS_TOKEN>"
+
+  Respuesta inmediata (202):
+    {"status":"calibration_started"}
+
+  La calibracion corre en segundo plano; NO esperes los 45 s en la respuesta.
+  Si ya hay una calibracion en curso responde 409 (Conflict).
+
+3.3) REFRESCAR el access_token (cuando caduque, sin volver a poner password)
+    curl -X POST http://<HOST>:8000/auth/refresh \
+         -H "Content-Type: application/json" \
+         -d '{"refresh_token":"<REFRESH_TOKEN>"}'
+
+  Respuesta (200):
+    {"access_token":"...","token_type":"bearer"}
+
+Codigos de error habituales:
+    401  -> credenciales invalidas, token ausente/expirado, o token de tipo
+            incorrecto (p.ej. usar el refresh_token en /calibrate).
+    409  -> ya hay una calibracion en curso.
+
+
+--------------------------------------------------------------------
+4) OPERACION
+--------------------------------------------------------------------
+Detener:            docker compose stop api
+Reiniciar:          docker compose restart api
+Detener y borrar:   docker compose down        (afecta a todos los servicios)
+Reconstruir tras cambiar codigo/requirements:
+                    docker compose build api && docker compose up -d api
+Logs en vivo:       docker compose logs -f api
+
+
+--------------------------------------------------------------------
+5) PRODUCCION (balena / Raspberry Pi 4)
+--------------------------------------------------------------------
+El servicio `api` ya esta anadido a prod/docker-compose.yml.
+
+- Las variables NO van en .env: se registran en el dashboard de balena
+  (Device o Fleet variables):
+      MIKASA_IP, MIKASA_USERNAME, MIKASA_PASSWORD,
+      JWT_SECRET_KEY, ACCESS_TOKEN_EXPIRE_MINUTES, REFRESH_TOKEN_EXPIRE_DAYS,
+      API_USERNAME, API_PASSWORD_HASH
+
+- En balena, API_PASSWORD_HASH puede ir como hash bcrypt CRUDO ($2b$12$...)
+  porque el dashboard no interpola los '$'. (El servicio tambien acepta base64.)
+
+- Exposicion: el mapeo es 8000:8000, accesible en la LAN del dispositivo.
+  La public device URL de balena solo tunela el puerto 80; si necesitas acceso
+  por esa URL, mapea "80:8000" o pon un proxy inverso delante.
+
+Desplegar:  balena push <fleet>   (o el flujo de despliegue habitual del proyecto)
+
+
+--------------------------------------------------------------------
+6) NOTAS
+--------------------------------------------------------------------
+- uvicorn arranca con: host 0.0.0.0, port 8000, workers 1, proxy_headers=True,
+  forwarded_allow_ips="*" (pensado para ir detras de un reverse proxy).
+- La duracion de la fase encendida se puede ajustar con CALIBRATION_SECONDS
+  (por defecto 45).
+- El servicio serializa las calibraciones: no lanza dos a la vez (responde 409).
+====================================================================

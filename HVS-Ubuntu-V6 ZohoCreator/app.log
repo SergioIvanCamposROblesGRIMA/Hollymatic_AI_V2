@@ -1,0 +1,16 @@
+2026-06-29 09:27:33,233 - HVS-MainCore [INFO] (MainThread) - modelsloaders:93 - Cargando modelos de clasificacion
+2026-06-29 09:27:33,233 - INFO - Cargando modelos de clasificacion
+2026-06-29 09:27:33,233 - HVS-MainCore [INFO] (MainThread) - modelsloaders:102 - Cargando modelos de inferencia de piezas
+2026-06-29 09:27:33,233 - INFO - Cargando modelos de inferencia de piezas
+2026-06-29 09:27:33,233 - HVS-MainCore [INFO] (MainThread) - modelsloaders:36 - Se inicia iteracion por cada una de los planos (views) disponibles
+2026-06-29 09:27:33,233 - INFO - Se inicia iteracion por cada una de los planos (views) disponibles
+2026-06-29 09:27:33,233 - HVS-MainCore [INFO] (MainThread) - modelsloaders:46 - Cargando los modelos de validacion de correcto armado: ./models/frontal_models/lock_shaft_model.pt
+2026-06-29 09:27:33,233 - INFO - Cargando los modelos de validacion de correcto armado: ./models/frontal_models/lock_shaft_model.pt
+2026-06-29 09:27:33,233 - HVS-MainCore [INFO] (MainThread) - modelsloaders:46 - Cargando los modelos de validacion de correcto armado: ./models/zenithal_models/eccentric_lever_and_ko_cup_model.pt
+2026-06-29 09:27:33,233 - INFO - Cargando los modelos de validacion de correcto armado: ./models/zenithal_models/eccentric_lever_and_ko_cup_model.pt
+2026-06-29 09:27:33,233 - HVS-MainCore [INFO] (MainThread) - modelsloaders:46 - Cargando los modelos de validacion de correcto armado: ./models/backward_models/ram_assembly_and_drive_bar_model.pt
+2026-06-29 09:27:33,233 - INFO - Cargando los modelos de validacion de correcto armado: ./models/backward_models/ram_assembly_and_drive_bar_model.pt
+2026-06-29 09:27:33,233 - HVS-MainCore [CRITICAL] (MainThread) - modelsloaders:111 - No se ha podido cargar el modelo de clasificación
+NoneType: None
+2026-06-29 09:27:33,233 - CRITICAL - No se ha podido cargar el modelo de clasificación
+NoneType: None
