@@ -18,7 +18,8 @@ ya que el equipo a descomponerse limita la formación de patties para su venta.
 
 	1, Verde: Este color indica arranque de la detección. toma una fotografía para cada cámara y pasa por un doble filtro de 		inteligencia artifcial. Clasificación la cual permite determinar que vista se tiene del equipo (cenital, frontral o tracera). y detección la cual identifica especificamente que pieza es la que esta correctamente armada o en su defecto la cual no cumple. 
 
-## NOTA: Apartir de la version 1.5 también permite almacenar esto en una base de datos local. La cual registra intentos de armado para posteriormente generar KPIs especificos sobre el uso de este equipo.
+## NOTA: 
+Apartir de la version 1.5 también permite almacenar esto en una base de datos local. La cual registra intentos de armado para posteriormente generar KPIs especificos sobre el uso de este equipo.
 
 ## Azul:
 Este botón gestiona la calibración. Se le da un espacio temporal a la persona de aproximadamente 1 minuto para poder calibrar la hollymatic realizando un encendido del enchufe una espera de poco mas de un minuto y posteriormente solicita cortar la corriente a los plugs del KP200.
