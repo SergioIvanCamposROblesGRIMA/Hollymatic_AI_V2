@@ -41,9 +41,9 @@ if __name__ == "__main__":
 
     while execute == True:
         #Prod    
-        if turn_on_button.is_held:
+        #if turn_on_button.is_held:
         #Test
-        #if dev == 1:
+        if dev == 1:
             
             correct_assamblies = 0
             config_models.set_to_default()
@@ -112,13 +112,13 @@ if __name__ == "__main__":
                         is_bad=1, bad_piece_names=bad_assemblies_capturared,
                         timestamp=attempt_timestamp)
 
-        if shut_down_button.is_held:
+        #if shut_down_button.is_held:
         #if dev == 2:
             gchat.send_advice(configmessages.HOLLYMATIC_MESSAGE_SHUT_DOWN)
             loop.run_until_complete(system.hollymatic_shut_down())
             logger.info("Apagado")
-        if calibrate_button.is_held:
-        #if dev == 3:
+        #if calibrate_button.is_held:
+        if dev == 3:
             logger.info("Solicitud de encendido (autorización 2 pasos) iniciada")
 
             # Empezar limpio: solo se enviaran las fotos recien tomadas
