@@ -1,0 +1,44 @@
+# Usa la especificación Compose más reciente (no requiere la clave 'version' superior)
+services:
+  app:
+    # Configuración de la construcción de la imagen
+    build:
+      context: . # Directorio que contiene el Dockerfile y el código fuente
+      dockerfile: Dockerfile # Nombre del Dockerfile a usar
+
+    
+    # Nombre del contenedor (opcional, útil para referencias directas, pero puede causar conflictos si escalas)
+    container_name: Hollymatic_Vision_System
+    
+    # Carga variables de entorno desde un archivo .env en el mismo directorio
+    env_file:
+      - .env
+      
+    # Define variables de entorno adicionales o sobrescribe las del env_file
+    environment:
+      - APP_PATH=/app # Ruta de la aplicación dentro del contenedor
+      - INSIDE_CONTAINER=true # Flag para indicar que se ejecuta en un contenedor
+      
+    # Mapea dispositivos del host al contenedor (necesario para acceso a hardware como cámaras)
+    devices:
+      - "/dev/video0:/dev/video0"
+      - "/dev/video2:/dev/video2"
+      - "/dev/video4:/dev/video4"
+      - "/dev/gpiomem:/dev/gpiomem"
+      
+      
+    # Añade el usuario principal del contenedor al grupo 'video' del host (necesario para permisos de /dev/video*)
+    group_add:
+      - app # Asegúrate de que el usuario dentro del contenedor tenga permisos para este grupo
+
+    # Política de reinicio: Reinicia el contenedor a menos que se detenga explícitamente
+    restart: always
+
+    # Volúmenes: Mapea el código fuente local al contenedor para desarrollo (cambios en vivo)
+    # ATENCIÓN: Esto es ideal para desarrollo. Para producción, normalmente copias el código en la imagen durante el build.
+    volumes:
+      - ./app:/app # Mapea el directorio actual (.) del host a /app en el contenedor
+      - ./secrets:/app/secrets
+      # - datos_persistentes:/ruta/a/datos/persistentes # Descomenta y define si necesitas persistencia de datos
+      # - /ruta/host/logs:/app/logs # Ejemplo para mapear logs a una ruta específica del host
+      

@@ -1,0 +1,440 @@
+2026-06-30 08:15:53,734 - INFO - generated new fontManager
+2026-06-30 08:15:54,078 - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-06-30 08:15:54,078 - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-06-30 08:15:54,078 - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-06-30 08:15:54,079 - INFO - Added job "night_off" to job store "default"
+2026-06-30 08:15:54,079 - INFO - Added job "clean" to job store "default"
+2026-06-30 08:15:54,079 - INFO - Added job "kpi_report" to job store "default"
+2026-06-30 08:15:54,079 - INFO - Scheduler started
+2026-06-30 08:15:54,079 - HVS-MainCore [INFO] (MainThread) - main:51 - [START] AsyncIOScheduler iniciado.
+2026-06-30 08:15:54,079 - INFO - [START] AsyncIOScheduler iniciado.
+2026-06-30 08:24:36,470 - INFO - generated new fontManager
+2026-06-30 08:24:37,239 - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-06-30 08:24:37,239 - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-06-30 08:24:37,241 - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-06-30 08:24:37,242 - INFO - Added job "night_off" to job store "default"
+2026-06-30 08:24:37,242 - INFO - Added job "clean" to job store "default"
+2026-06-30 08:24:37,243 - INFO - Added job "kpi_report" to job store "default"
+2026-06-30 08:24:37,243 - INFO - Scheduler started
+2026-06-30 08:24:37,243 - HVS-MainCore [INFO] (MainThread) - main:51 - [START] AsyncIOScheduler iniciado.
+2026-06-30 08:24:37,243 - INFO - [START] AsyncIOScheduler iniciado.
+2026-06-30 08:52:43,961 - HVS-MainCore [INFO] (MainThread) - kpi_manager:184 - Reporte de KPIs 2026-05: 0 intentos leídos de la base de datos.
+2026-06-30 08:52:47,814 - HVS-MainCore [INFO] (MainThread) - gdrive:70 - PDF de KPIs subido a Drive. Link: https://drive.google.com/file/d/1hrq9J0E3Ul5Ap8f4miDVQnd334ey3k04/view?usp=drivesdk
+2026-06-30 08:53:56,220 - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-06-30 08:53:56,220 - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-06-30 08:53:56,220 - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-06-30 08:53:56,221 - INFO - Added job "night_off" to job store "default"
+2026-06-30 08:53:56,221 - INFO - Added job "clean" to job store "default"
+2026-06-30 08:53:56,221 - INFO - Added job "kpi_report" to job store "default"
+2026-06-30 08:53:56,221 - INFO - Scheduler started
+2026-06-30 08:53:56,221 - HVS-MainCore [INFO] (MainThread) - main:51 - [START] AsyncIOScheduler iniciado.
+2026-06-30 08:53:56,221 - INFO - [START] AsyncIOScheduler iniciado.
+2026-06-30 08:54:04,291 - HVS-MainCore [INFO] (MainThread) - kpi_manager:184 - Reporte de KPIs 2026-06: 12 intentos leídos de la base de datos.
+2026-06-30 08:54:08,874 - HVS-MainCore [INFO] (MainThread) - gdrive:70 - PDF de KPIs subido a Drive. Link: https://drive.google.com/file/d/1-GfzCENM132G6Ax3tMis_E_OO-rMfK-P/view?usp=drivesdk
+2026-06-30 11:58:09,267 - INFO - generated new fontManager
+2026-06-30 11:58:09,802 - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-06-30 11:58:09,802 - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-06-30 11:58:09,803 - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-06-30 11:58:09,804 - INFO - Added job "night_off" to job store "default"
+2026-06-30 11:58:09,804 - INFO - Added job "clean" to job store "default"
+2026-06-30 11:58:09,804 - INFO - Added job "kpi_report" to job store "default"
+2026-06-30 11:58:09,804 - INFO - Scheduler started
+2026-06-30 11:58:09,804 - HVS-MainCore [INFO] (MainThread) - main:51 - [START] AsyncIOScheduler iniciado.
+2026-06-30 11:58:09,804 - INFO - [START] AsyncIOScheduler iniciado.
+2026-06-30 12:01:03,117 - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-06-30 12:01:03,117 - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-06-30 12:01:03,117 - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-06-30 12:01:03,117 - INFO - Added job "night_off" to job store "default"
+2026-06-30 12:01:03,117 - INFO - Added job "clean" to job store "default"
+2026-06-30 12:01:03,117 - INFO - Added job "kpi_report" to job store "default"
+2026-06-30 12:01:03,117 - INFO - Scheduler started
+2026-06-30 12:01:03,118 - HVS-MainCore [INFO] (MainThread) - main:51 - [START] AsyncIOScheduler iniciado.
+2026-06-30 12:01:03,118 - INFO - [START] AsyncIOScheduler iniciado.
+2026-06-30 12:01:13,576 - INFO - generated new fontManager
+2026-06-30 12:01:13,933 - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-06-30 12:01:13,933 - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-06-30 12:01:13,933 - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-06-30 12:01:13,934 - INFO - Added job "night_off" to job store "default"
+2026-06-30 12:01:13,934 - INFO - Added job "clean" to job store "default"
+2026-06-30 12:01:13,934 - INFO - Added job "kpi_report" to job store "default"
+2026-06-30 12:01:13,934 - INFO - Scheduler started
+2026-06-30 12:01:13,934 - HVS-MainCore [INFO] (MainThread) - main:51 - [START] AsyncIOScheduler iniciado.
+2026-06-30 12:01:13,934 - INFO - [START] AsyncIOScheduler iniciado.
+2026-06-30 12:01:24,003 - HVS-MainCore [ERROR] (MainThread) - main:51 - Falló el envío de notificación de inicio a Google Chat para 'HVS-MainCore': HTTPSConnectionPool(host='chat.googleapis.com', port=443): Read timed out. (read timeout=10)
+2026-06-30 12:01:24,003 - ERROR - Falló el envío de notificación de inicio a Google Chat para 'HVS-MainCore': HTTPSConnectionPool(host='chat.googleapis.com', port=443): Read timed out. (read timeout=10)
+2026-06-30 12:03:00,096 - INFO - Running job "clean (trigger: cron[hour='12', minute='3'], next run at: 2026-07-01 12:03:00 PDT)" (scheduled at 2026-06-30 12:03:00-07:00)
+2026-06-30 12:03:00,096 - HVS-MainCore [INFO] (MainThread) - main:22 - Inicio de recordatorio de limpieza
+2026-06-30 12:03:00,096 - INFO - Inicio de recordatorio de limpieza
+2026-06-30 12:03:00,128 - INFO - file_cache is only supported with oauth2client<4.0.0
+2026-06-30 12:03:00,130 - INFO - Enviando mensaje al espacio: spaces/AAAA2B2J6s4
+2026-06-30 12:03:00,130 - INFO - Enviando mensaje al espacio: spaces/AAAA2B2J6s4
+2026-06-30 12:03:00,912 - INFO -    - Mensaje enviado con éxito. ID del mensaje: spaces/AAAA2B2J6s4/messages/yMr8ulzCFB8.yMr8ulzCFB8
+2026-06-30 12:03:00,912 - INFO -    - Mensaje enviado con éxito. ID del mensaje: spaces/AAAA2B2J6s4/messages/yMr8ulzCFB8.yMr8ulzCFB8
+2026-06-30 12:03:10,912 - HVS-MainCore [INFO] (MainThread) - main:25 - Recordatorio enviado
+2026-06-30 12:03:10,912 - INFO - Recordatorio enviado
+2026-06-30 12:03:10,912 - INFO - Job "clean (trigger: cron[hour='12', minute='3'], next run at: 2026-07-01 12:03:00 PDT)" executed successfully
+2026-06-30 15:32:37,704 - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-06-30 15:32:37,705 - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-06-30 15:32:37,705 - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-06-30 15:32:37,706 - INFO - Added job "night_off" to job store "default"
+2026-06-30 15:32:37,706 - INFO - Added job "clean" to job store "default"
+2026-06-30 15:32:37,706 - INFO - Added job "kpi_report" to job store "default"
+2026-06-30 15:32:37,706 - INFO - Scheduler started
+2026-06-30 15:32:37,706 - HVS-MainCore [INFO] (MainThread) - main:51 - [START] AsyncIOScheduler iniciado.
+2026-06-30 15:32:37,706 - INFO - [START] AsyncIOScheduler iniciado.
+2026-07-02 13:57:29,151 - INFO - generated new fontManager
+2026-07-02 13:57:29,560 - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-07-02 13:57:29,560 - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-07-02 13:57:29,561 - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-07-02 13:57:29,561 - INFO - Added job "night_off" to job store "default"
+2026-07-02 13:57:29,562 - INFO - Added job "clean" to job store "default"
+2026-07-02 13:57:29,562 - INFO - Added job "kpi_report" to job store "default"
+2026-07-02 13:57:29,562 - INFO - Scheduler started
+2026-07-02 13:57:29,562 - HVS-MainCore [INFO] (MainThread) - main:51 - [START] AsyncIOScheduler iniciado.
+2026-07-02 13:57:29,562 - INFO - [START] AsyncIOScheduler iniciado.
+2026-07-02 15:07:05,987 - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-07-02 15:07:05,987 - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-07-02 15:07:05,987 - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-07-02 15:07:05,988 - INFO - Added job "night_off" to job store "default"
+2026-07-02 15:07:05,988 - INFO - Added job "clean" to job store "default"
+2026-07-02 15:07:05,988 - INFO - Added job "kpi_report" to job store "default"
+2026-07-02 15:07:05,988 - INFO - Scheduler started
+2026-07-02 15:07:05,988 - HVS-MainCore [INFO] (MainThread) - main:51 - [START] AsyncIOScheduler iniciado.
+2026-07-02 15:07:05,988 - INFO - [START] AsyncIOScheduler iniciado.
+2026-07-02 15:07:05,991 - HVS-MainCore [ERROR] (MainThread) - main:51 - Falló el envío de notificación de inicio a Google Chat para 'HVS-MainCore': HTTPSConnectionPool(host='chat.googleapis.com', port=443): Max retries exceeded with url: /v1/spaces/AAQAW2Ru6mw/messages?key=AIzaSyDdI0hCZtE6vySjMm-WEfRq3CPzqKqqsHI&token=rkDYIqryUgJTLaSeHI3dMBOJJ-t0ZM4E29_cClR_7bo (Caused by NameResolutionError("HTTPSConnection(host='chat.googleapis.com', port=443): Failed to resolve 'chat.googleapis.com' ([Errno -3] Temporary failure in name resolution)"))
+2026-07-02 15:07:05,991 - ERROR - Falló el envío de notificación de inicio a Google Chat para 'HVS-MainCore': HTTPSConnectionPool(host='chat.googleapis.com', port=443): Max retries exceeded with url: /v1/spaces/AAQAW2Ru6mw/messages?key=AIzaSyDdI0hCZtE6vySjMm-WEfRq3CPzqKqqsHI&token=rkDYIqryUgJTLaSeHI3dMBOJJ-t0ZM4E29_cClR_7bo (Caused by NameResolutionError("HTTPSConnection(host='chat.googleapis.com', port=443): Failed to resolve 'chat.googleapis.com' ([Errno -3] Temporary failure in name resolution)"))
+2026-07-03 07:26:37,957 - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-07-03 07:26:37,957 - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-07-03 07:26:37,958 - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-07-03 07:26:37,960 - INFO - Added job "night_off" to job store "default"
+2026-07-03 07:26:37,960 - INFO - Added job "clean" to job store "default"
+2026-07-03 07:26:37,960 - INFO - Added job "kpi_report" to job store "default"
+2026-07-03 07:26:37,960 - INFO - Scheduler started
+2026-07-03 07:26:37,961 - HVS-MainCore [INFO] (MainThread) - main:51 - [START] AsyncIOScheduler iniciado.
+2026-07-03 07:26:37,961 - INFO - [START] AsyncIOScheduler iniciado.
+2026-07-03 07:55:08,350 - INFO - generated new fontManager
+2026-07-03 07:55:09,135 - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-07-03 07:55:09,135 - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-07-03 07:55:09,137 - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-07-03 07:55:09,139 - INFO - Added job "night_off" to job store "default"
+2026-07-03 07:55:09,139 - INFO - Added job "clean" to job store "default"
+2026-07-03 07:55:09,139 - INFO - Added job "kpi_report" to job store "default"
+2026-07-03 07:55:09,139 - INFO - Scheduler started
+2026-07-03 07:55:09,139 - HVS-MainCore [INFO] (MainThread) - main:51 - [START] AsyncIOScheduler iniciado.
+2026-07-03 07:55:09,139 - INFO - [START] AsyncIOScheduler iniciado.
+2026-07-05 09:04:44,967 - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-07-05 09:04:44,967 - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-07-05 09:04:44,968 - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-07-05 09:04:44,969 - INFO - Added job "night_off" to job store "default"
+2026-07-05 09:04:44,969 - INFO - Added job "clean" to job store "default"
+2026-07-05 09:04:44,969 - INFO - Added job "kpi_report" to job store "default"
+2026-07-05 09:04:44,970 - INFO - Scheduler started
+2026-07-05 09:04:44,970 - HVS-MainCore [INFO] (MainThread) - main:51 - [START] AsyncIOScheduler iniciado.
+2026-07-05 09:04:44,970 - INFO - [START] AsyncIOScheduler iniciado.
+2026-07-06 07:58:05,190 - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-07-06 07:58:05,190 - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-07-06 07:58:05,190 - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-07-06 07:58:05,191 - INFO - Added job "night_off" to job store "default"
+2026-07-06 07:58:05,191 - INFO - Added job "clean" to job store "default"
+2026-07-06 07:58:05,191 - INFO - Added job "kpi_report" to job store "default"
+2026-07-06 07:58:05,191 - INFO - Scheduler started
+2026-07-06 07:58:05,191 - HVS-MainCore [INFO] (MainThread) - main:51 - [START] AsyncIOScheduler iniciado.
+2026-07-06 07:58:05,191 - INFO - [START] AsyncIOScheduler iniciado.
+2026-07-06 10:34:09,975 - INFO - generated new fontManager
+2026-07-06 10:34:10,303 - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-07-06 10:34:10,303 - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-07-06 10:34:10,304 - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-07-06 10:34:10,304 - INFO - Added job "night_off" to job store "default"
+2026-07-06 10:34:10,304 - INFO - Added job "clean" to job store "default"
+2026-07-06 10:34:10,304 - INFO - Added job "kpi_report" to job store "default"
+2026-07-06 10:34:10,304 - INFO - Scheduler started
+2026-07-06 10:34:10,304 - HVS-MainCore [INFO] (MainThread) - main:51 - [START] AsyncIOScheduler iniciado.
+2026-07-06 10:34:10,304 - INFO - [START] AsyncIOScheduler iniciado.
+2026-07-06 10:34:14,308 - HVS-MainCore [ERROR] (MainThread) - main:51 - Falló el envío de notificación de inicio a Google Chat para 'HVS-MainCore': HTTPSConnectionPool(host='chat.googleapis.com', port=443): Max retries exceeded with url: /v1/spaces/AAQAW2Ru6mw/messages?key=AIzaSyDdI0hCZtE6vySjMm-WEfRq3CPzqKqqsHI&token=rkDYIqryUgJTLaSeHI3dMBOJJ-t0ZM4E29_cClR_7bo (Caused by NewConnectionError("HTTPSConnection(host='chat.googleapis.com', port=443): Failed to establish a new connection: [Errno 101] Network is unreachable"))
+2026-07-06 10:34:14,308 - ERROR - Falló el envío de notificación de inicio a Google Chat para 'HVS-MainCore': HTTPSConnectionPool(host='chat.googleapis.com', port=443): Max retries exceeded with url: /v1/spaces/AAQAW2Ru6mw/messages?key=AIzaSyDdI0hCZtE6vySjMm-WEfRq3CPzqKqqsHI&token=rkDYIqryUgJTLaSeHI3dMBOJJ-t0ZM4E29_cClR_7bo (Caused by NewConnectionError("HTTPSConnection(host='chat.googleapis.com', port=443): Failed to establish a new connection: [Errno 101] Network is unreachable"))
+2026-07-06 10:47:56,861 - INFO - generated new fontManager
+2026-07-06 10:47:57,195 - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-07-06 10:47:57,195 - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-07-06 10:47:57,196 - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-07-06 10:47:57,197 - INFO - Added job "night_off" to job store "default"
+2026-07-06 10:47:57,197 - INFO - Added job "clean" to job store "default"
+2026-07-06 10:47:57,197 - INFO - Added job "kpi_report" to job store "default"
+2026-07-06 10:47:57,197 - INFO - Scheduler started
+2026-07-06 10:47:57,197 - HVS-MainCore [INFO] (MainThread) - main:51 - [START] AsyncIOScheduler iniciado.
+2026-07-06 10:47:57,197 - INFO - [START] AsyncIOScheduler iniciado.
+2026-07-06 10:52:31,011 - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-07-06 10:52:31,011 - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-07-06 10:52:31,011 - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-07-06 10:52:31,011 - INFO - Added job "night_off" to job store "default"
+2026-07-06 10:52:31,011 - INFO - Added job "clean" to job store "default"
+2026-07-06 10:52:31,012 - INFO - Added job "kpi_report" to job store "default"
+2026-07-06 10:52:31,012 - INFO - Scheduler started
+2026-07-06 10:52:31,012 - HVS-MainCore [INFO] (MainThread) - main:51 - [START] AsyncIOScheduler iniciado.
+2026-07-06 10:52:31,012 - INFO - [START] AsyncIOScheduler iniciado.
+2026-07-06 10:53:32,526 - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-07-06 10:53:32,527 - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-07-06 10:53:32,527 - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-07-06 10:53:32,527 - INFO - Added job "night_off" to job store "default"
+2026-07-06 10:53:32,527 - INFO - Added job "clean" to job store "default"
+2026-07-06 10:53:32,527 - INFO - Added job "kpi_report" to job store "default"
+2026-07-06 10:53:32,527 - INFO - Scheduler started
+2026-07-06 10:53:32,528 - HVS-MainCore [INFO] (MainThread) - main:51 - [START] AsyncIOScheduler iniciado.
+2026-07-06 10:53:32,528 - INFO - [START] AsyncIOScheduler iniciado.
+2026-07-06 11:36:11,981 - INFO - generated new fontManager
+2026-07-06 11:36:12,275 - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-07-06 11:36:12,275 - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-07-06 11:36:12,275 - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-07-06 11:36:12,275 - INFO - Added job "night_off" to job store "default"
+2026-07-06 11:36:12,276 - INFO - Added job "clean" to job store "default"
+2026-07-06 11:36:12,276 - INFO - Added job "kpi_report" to job store "default"
+2026-07-06 11:36:12,276 - INFO - Scheduler started
+2026-07-06 11:36:12,276 - HVS-MainCore [INFO] (MainThread) - main:51 - [START] AsyncIOScheduler iniciado.
+2026-07-06 11:36:12,276 - INFO - [START] AsyncIOScheduler iniciado.
+2026-07-06 11:43:00,289 - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-07-06 11:43:00,289 - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-07-06 11:43:00,289 - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-07-06 11:43:00,289 - INFO - Added job "night_off" to job store "default"
+2026-07-06 11:43:00,289 - INFO - Added job "clean" to job store "default"
+2026-07-06 11:43:00,290 - INFO - Added job "kpi_report" to job store "default"
+2026-07-06 11:43:00,290 - INFO - Scheduler started
+2026-07-06 11:43:00,290 - HVS-MainCore [INFO] (MainThread) - main:51 - [START] AsyncIOScheduler iniciado.
+2026-07-06 11:43:00,290 - INFO - [START] AsyncIOScheduler iniciado.
+2026-07-06 11:45:53,839 - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-07-06 11:45:53,839 - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-07-06 11:45:53,839 - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-07-06 11:45:53,839 - INFO - Added job "night_off" to job store "default"
+2026-07-06 11:45:53,840 - INFO - Added job "clean" to job store "default"
+2026-07-06 11:45:53,840 - INFO - Added job "kpi_report" to job store "default"
+2026-07-06 11:45:53,840 - INFO - Scheduler started
+2026-07-06 11:45:53,840 - HVS-MainCore [INFO] (MainThread) - main:51 - [START] AsyncIOScheduler iniciado.
+2026-07-06 11:45:53,840 - INFO - [START] AsyncIOScheduler iniciado.
+2026-07-06 12:26:47,822 - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-07-06 12:26:47,822 - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-07-06 12:26:47,822 - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-07-06 12:26:47,823 - INFO - Added job "night_off" to job store "default"
+2026-07-06 12:26:47,823 - INFO - Added job "clean" to job store "default"
+2026-07-06 12:26:47,823 - INFO - Added job "kpi_report" to job store "default"
+2026-07-06 12:26:47,823 - INFO - Scheduler started
+2026-07-06 12:26:47,823 - HVS-MainCore [INFO] (MainThread) - main:51 - [START] AsyncIOScheduler iniciado.
+2026-07-06 12:26:47,823 - INFO - [START] AsyncIOScheduler iniciado.
+2026-07-06 13:42:06,856 - INFO - generated new fontManager
+2026-07-06 13:42:07,207 - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-07-06 13:42:07,207 - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-07-06 13:42:07,207 - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-07-06 13:42:07,208 - INFO - Added job "night_off" to job store "default"
+2026-07-06 13:42:07,208 - INFO - Added job "clean" to job store "default"
+2026-07-06 13:42:07,208 - INFO - Added job "kpi_report" to job store "default"
+2026-07-06 13:42:07,208 - INFO - Scheduler started
+2026-07-06 13:42:07,208 - HVS-MainCore [INFO] (MainThread) - main:51 - [START] AsyncIOScheduler iniciado.
+2026-07-06 13:42:07,208 - INFO - [START] AsyncIOScheduler iniciado.
+2026-07-06 13:43:45,520 - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-07-06 13:43:45,520 - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-07-06 13:43:45,520 - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-07-06 13:43:45,521 - INFO - Added job "night_off" to job store "default"
+2026-07-06 13:43:45,521 - INFO - Added job "clean" to job store "default"
+2026-07-06 13:43:45,521 - INFO - Added job "kpi_report" to job store "default"
+2026-07-06 13:43:45,521 - INFO - Scheduler started
+2026-07-06 13:43:45,521 - HVS-MainCore [INFO] (MainThread) - main:51 - [START] AsyncIOScheduler iniciado.
+2026-07-06 13:43:45,521 - INFO - [START] AsyncIOScheduler iniciado.
+2026-07-06 13:44:04,466 - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-07-06 13:44:04,467 - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-07-06 13:44:04,467 - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-07-06 13:44:04,467 - INFO - Added job "night_off" to job store "default"
+2026-07-06 13:44:04,467 - INFO - Added job "clean" to job store "default"
+2026-07-06 13:44:04,467 - INFO - Added job "kpi_report" to job store "default"
+2026-07-06 13:44:04,467 - INFO - Scheduler started
+2026-07-06 13:44:04,467 - HVS-MainCore [INFO] (MainThread) - main:51 - [START] AsyncIOScheduler iniciado.
+2026-07-06 13:44:04,467 - INFO - [START] AsyncIOScheduler iniciado.
+2026-07-06 15:53:36,257 - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-07-06 15:53:36,257 - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-07-06 15:53:36,257 - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-07-06 15:53:36,258 - INFO - Added job "night_off" to job store "default"
+2026-07-06 15:53:36,258 - INFO - Added job "clean" to job store "default"
+2026-07-06 15:53:36,258 - INFO - Added job "kpi_report" to job store "default"
+2026-07-06 15:53:36,258 - INFO - Scheduler started
+2026-07-06 15:53:36,258 - HVS-MainCore [INFO] (MainThread) - main:51 - [START] AsyncIOScheduler iniciado.
+2026-07-06 15:53:36,258 - INFO - [START] AsyncIOScheduler iniciado.
+2026-07-06 15:53:46,354 - HVS-MainCore [ERROR] (MainThread) - main:51 - Falló el envío de notificación de inicio a Google Chat para 'HVS-MainCore': HTTPSConnectionPool(host='chat.googleapis.com', port=443): Read timed out. (read timeout=10)
+2026-07-06 15:53:46,354 - ERROR - Falló el envío de notificación de inicio a Google Chat para 'HVS-MainCore': HTTPSConnectionPool(host='chat.googleapis.com', port=443): Read timed out. (read timeout=10)
+2026-07-06 15:59:15,922 - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-07-06 15:59:15,922 - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-07-06 15:59:15,922 - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-07-06 15:59:15,922 - INFO - Added job "night_off" to job store "default"
+2026-07-06 15:59:15,923 - INFO - Added job "clean" to job store "default"
+2026-07-06 15:59:15,923 - INFO - Added job "kpi_report" to job store "default"
+2026-07-06 15:59:15,923 - INFO - Scheduler started
+2026-07-06 15:59:15,923 - HVS-MainCore [INFO] (MainThread) - main:51 - [START] AsyncIOScheduler iniciado.
+2026-07-06 15:59:15,923 - INFO - [START] AsyncIOScheduler iniciado.
+2026-07-06 16:02:00,101 - INFO - Running job "night_off (trigger: cron[hour='16', minute='2'], next run at: 2026-07-07 16:02:00 PDT)" (scheduled at 2026-07-06 16:02:00-07:00)
+2026-07-06 16:02:00,101 - HVS-MainCore [INFO] (MainThread) - main:14 - Validando estado del KP200 antes del cierre...
+2026-07-06 16:02:00,101 - INFO - Validando estado del KP200 antes del cierre...
+2026-07-06 16:02:05,150 - ERROR - Connection issue with the device: Timed out getting discovery response for 10.0.0.247
+2026-07-06 16:02:05,152 - ERROR - Job "night_off (trigger: cron[hour='16', minute='2'], next run at: 2026-07-07 16:02:00 PDT)" raised an exception
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/apscheduler/executors/base_py3.py", line 30, in run_coroutine_job
+    retval = await job.func(*job.args, **job.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/./main.py", line 15, in night_off
+    status = await kp200.night_off()
+             ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/src/executors/kp200_manager.py", line 16, in night_off
+    await controller.discover_device()
+  File "/app/src/tp_link/mikasa.py", line 28, in discover_device
+    self.device = await Discover.discover_single(host=self.ip_address,port=9999, username=self.username, password=self.password)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/kasa/discover.py", line 607, in discover_single
+    raise TimeoutError(f"Timed out getting discovery response for {host}")
+kasa.exceptions.TimeoutError: Timed out getting discovery response for 10.0.0.247
+2026-07-06 16:03:00,055 - INFO - Running job "clean (trigger: cron[hour='16', minute='3'], next run at: 2026-07-07 16:03:00 PDT)" (scheduled at 2026-07-06 16:03:00-07:00)
+2026-07-06 16:03:00,055 - HVS-MainCore [INFO] (MainThread) - main:22 - Inicio de recordatorio de limpieza
+2026-07-06 16:03:00,055 - INFO - Inicio de recordatorio de limpieza
+2026-07-06 16:03:00,082 - INFO - file_cache is only supported with oauth2client<4.0.0
+2026-07-06 16:03:00,084 - INFO - Enviando mensaje al espacio: spaces/AAAA2B2J6s4
+2026-07-06 16:03:00,084 - INFO - Enviando mensaje al espacio: spaces/AAAA2B2J6s4
+2026-07-06 16:03:00,857 - INFO -    - Mensaje enviado con éxito. ID del mensaje: spaces/AAAA2B2J6s4/messages/C7WuK3gbdP0.C7WuK3gbdP0
+2026-07-06 16:03:00,857 - INFO -    - Mensaje enviado con éxito. ID del mensaje: spaces/AAAA2B2J6s4/messages/C7WuK3gbdP0.C7WuK3gbdP0
+2026-07-06 16:03:10,857 - HVS-MainCore [INFO] (MainThread) - main:25 - Recordatorio enviado
+2026-07-06 16:03:10,857 - INFO - Recordatorio enviado
+2026-07-06 16:03:10,857 - INFO - Job "clean (trigger: cron[hour='16', minute='3'], next run at: 2026-07-07 16:03:00 PDT)" executed successfully
+2026-07-06 16:04:00,049 - INFO - Running job "kpi_report (trigger: cron[day='6', hour='16', minute='4'], next run at: 2026-08-06 16:04:00 PDT)" (scheduled at 2026-07-06 16:04:00-07:00)
+2026-07-06 16:04:00,049 - HVS-MainCore [INFO] (MainThread) - main:33 - Generando reporte mensual de KPIs...
+2026-07-06 16:04:00,049 - INFO - Generando reporte mensual de KPIs...
+2026-07-06 16:04:00,080 - HVS-MainCore [INFO] (MainThread) - kpi_manager:184 - Reporte de KPIs 2026-06: 0 intentos leídos de la base de datos.
+2026-07-06 16:04:00,080 - INFO - Reporte de KPIs 2026-06: 0 intentos leídos de la base de datos.
+2026-07-06 16:04:00,255 - INFO - file_cache is only supported with oauth2client<4.0.0
+2026-07-06 16:04:03,680 - HVS-MainCore [INFO] (MainThread) - gdrive:70 - PDF de KPIs subido a Drive. Link: https://drive.google.com/file/d/1Yo6cdKsKBLoNwSFpqgk2_QfFCN4RyCVR/view?usp=drivesdk
+2026-07-06 16:04:03,680 - INFO - PDF de KPIs subido a Drive. Link: https://drive.google.com/file/d/1Yo6cdKsKBLoNwSFpqgk2_QfFCN4RyCVR/view?usp=drivesdk
+2026-07-06 16:04:03,706 - INFO - file_cache is only supported with oauth2client<4.0.0
+2026-07-06 16:04:03,707 - INFO - Enviando mensaje al espacio: spaces/AAAA2B2J6s4
+2026-07-06 16:04:03,707 - INFO - Enviando mensaje al espacio: spaces/AAAA2B2J6s4
+2026-07-06 16:04:04,301 - INFO -    - Mensaje enviado con éxito. ID del mensaje: spaces/AAAA2B2J6s4/messages/nNcxzEMHEjE.nNcxzEMHEjE
+2026-07-06 16:04:04,301 - INFO -    - Mensaje enviado con éxito. ID del mensaje: spaces/AAAA2B2J6s4/messages/nNcxzEMHEjE.nNcxzEMHEjE
+2026-07-06 16:04:14,301 - HVS-MainCore [INFO] (MainThread) - main:36 - Reporte de KPIs generado: /app/output/kpi_report_2026-06.pdf
+2026-07-06 16:04:14,301 - INFO - Reporte de KPIs generado: /app/output/kpi_report_2026-06.pdf
+2026-07-06 16:04:14,301 - INFO - Job "kpi_report (trigger: cron[day='6', hour='16', minute='4'], next run at: 2026-08-06 16:04:00 PDT)" executed successfully
+2026-07-06 16:10:10,602 - INFO - generated new fontManager
+2026-07-06 16:10:10,916 - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-07-06 16:10:10,916 - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-07-06 16:10:10,916 - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-07-06 16:10:10,917 - INFO - Added job "night_off" to job store "default"
+2026-07-06 16:10:10,917 - INFO - Added job "clean" to job store "default"
+2026-07-06 16:10:10,917 - INFO - Added job "kpi_report" to job store "default"
+2026-07-06 16:10:10,917 - INFO - Scheduler started
+2026-07-06 16:10:10,917 - HVS-MainCore [INFO] (MainThread) - main:51 - [START] AsyncIOScheduler iniciado.
+2026-07-06 16:10:10,917 - INFO - [START] AsyncIOScheduler iniciado.
+2026-07-06 16:12:00,096 - INFO - Running job "night_off (trigger: cron[hour='16', minute='12'], next run at: 2026-07-07 16:12:00 PDT)" (scheduled at 2026-07-06 16:12:00-07:00)
+2026-07-06 16:12:00,096 - HVS-MainCore [INFO] (MainThread) - main:14 - Validando estado del KP200 antes del cierre...
+2026-07-06 16:12:00,096 - INFO - Validando estado del KP200 antes del cierre...
+2026-07-06 16:12:05,130 - ERROR - Connection issue with the device: Timed out getting discovery response for 10.0.0.247
+2026-07-06 16:12:05,130 - ERROR - Job "night_off (trigger: cron[hour='16', minute='12'], next run at: 2026-07-07 16:12:00 PDT)" raised an exception
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/apscheduler/executors/base_py3.py", line 30, in run_coroutine_job
+    retval = await job.func(*job.args, **job.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/./main.py", line 15, in night_off
+    status = await kp200.night_off()
+             ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/src/executors/kp200_manager.py", line 16, in night_off
+    await controller.discover_device()
+  File "/app/src/tp_link/mikasa.py", line 28, in discover_device
+    self.device = await Discover.discover_single(host=self.ip_address,port=9999, username=self.username, password=self.password)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/kasa/discover.py", line 607, in discover_single
+    raise TimeoutError(f"Timed out getting discovery response for {host}")
+kasa.exceptions.TimeoutError: Timed out getting discovery response for 10.0.0.247
+2026-07-06 16:13:00,055 - INFO - Running job "clean (trigger: cron[hour='16', minute='13'], next run at: 2026-07-07 16:13:00 PDT)" (scheduled at 2026-07-06 16:13:00-07:00)
+2026-07-06 16:13:00,055 - HVS-MainCore [INFO] (MainThread) - main:22 - Inicio de recordatorio de limpieza
+2026-07-06 16:13:00,055 - INFO - Inicio de recordatorio de limpieza
+2026-07-06 16:13:00,081 - INFO - file_cache is only supported with oauth2client<4.0.0
+2026-07-06 16:13:00,083 - INFO - Enviando mensaje al espacio: spaces/AAAA2B2J6s4
+2026-07-06 16:13:00,083 - INFO - Enviando mensaje al espacio: spaces/AAAA2B2J6s4
+2026-07-06 16:13:00,918 - INFO -    - Mensaje enviado con éxito. ID del mensaje: spaces/AAAA2B2J6s4/messages/Iarq08KXJxI.Iarq08KXJxI
+2026-07-06 16:13:00,918 - INFO -    - Mensaje enviado con éxito. ID del mensaje: spaces/AAAA2B2J6s4/messages/Iarq08KXJxI.Iarq08KXJxI
+2026-07-06 16:13:10,919 - HVS-MainCore [INFO] (MainThread) - main:25 - Recordatorio enviado
+2026-07-06 16:13:10,919 - INFO - Recordatorio enviado
+2026-07-06 16:13:10,919 - INFO - Job "clean (trigger: cron[hour='16', minute='13'], next run at: 2026-07-07 16:13:00 PDT)" executed successfully
+2026-07-06 16:14:00,049 - INFO - Running job "kpi_report (trigger: cron[day='6', hour='16', minute='14'], next run at: 2026-08-06 16:14:00 PDT)" (scheduled at 2026-07-06 16:14:00-07:00)
+2026-07-06 16:14:00,049 - HVS-MainCore [INFO] (MainThread) - main:33 - Generando reporte mensual de KPIs...
+2026-07-06 16:14:00,049 - INFO - Generando reporte mensual de KPIs...
+2026-07-06 16:14:00,103 - HVS-MainCore [INFO] (MainThread) - kpi_manager:184 - Reporte de KPIs 2026-06: 0 intentos leídos de la base de datos.
+2026-07-06 16:14:00,103 - INFO - Reporte de KPIs 2026-06: 0 intentos leídos de la base de datos.
+2026-07-06 16:14:00,282 - INFO - file_cache is only supported with oauth2client<4.0.0
+2026-07-06 16:14:04,303 - HVS-MainCore [INFO] (MainThread) - gdrive:70 - PDF de KPIs subido a Drive. Link: https://drive.google.com/file/d/1OpAyUgMgaiOTtU0RchHBBD7pGeKsEzqH/view?usp=drivesdk
+2026-07-06 16:14:04,303 - INFO - PDF de KPIs subido a Drive. Link: https://drive.google.com/file/d/1OpAyUgMgaiOTtU0RchHBBD7pGeKsEzqH/view?usp=drivesdk
+2026-07-06 16:14:04,329 - INFO - file_cache is only supported with oauth2client<4.0.0
+2026-07-06 16:14:04,332 - INFO - Enviando mensaje al espacio: spaces/AAAA2B2J6s4
+2026-07-06 16:14:04,332 - INFO - Enviando mensaje al espacio: spaces/AAAA2B2J6s4
+2026-07-06 16:14:05,373 - INFO -    - Mensaje enviado con éxito. ID del mensaje: spaces/AAAA2B2J6s4/messages/0SFtmAicjxo.0SFtmAicjxo
+2026-07-06 16:14:05,374 - INFO -    - Mensaje enviado con éxito. ID del mensaje: spaces/AAAA2B2J6s4/messages/0SFtmAicjxo.0SFtmAicjxo
+2026-07-06 16:14:15,374 - HVS-MainCore [INFO] (MainThread) - main:36 - Reporte de KPIs generado: /app/output/kpi_report_2026-06.pdf
+2026-07-06 16:14:15,374 - INFO - Reporte de KPIs generado: /app/output/kpi_report_2026-06.pdf
+2026-07-06 16:14:15,374 - INFO - Job "kpi_report (trigger: cron[day='6', hour='16', minute='14'], next run at: 2026-08-06 16:14:00 PDT)" executed successfully
+2026-07-06 16:17:41,669 - INFO - generated new fontManager
+2026-07-06 16:17:41,976 - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-07-06 16:17:41,976 - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-07-06 16:17:41,976 - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-07-06 16:17:41,977 - INFO - Added job "night_off" to job store "default"
+2026-07-06 16:17:41,977 - INFO - Added job "clean" to job store "default"
+2026-07-06 16:17:41,977 - INFO - Added job "kpi_report" to job store "default"
+2026-07-06 16:17:41,977 - INFO - Scheduler started
+2026-07-06 16:17:41,977 - HVS-MainCore [INFO] (MainThread) - main:51 - [START] AsyncIOScheduler iniciado.
+2026-07-06 16:17:41,977 - INFO - [START] AsyncIOScheduler iniciado.
+2026-07-06 16:19:00,077 - INFO - Running job "clean (trigger: cron[hour='16', minute='19'], next run at: 2026-07-07 16:19:00 PDT)" (scheduled at 2026-07-06 16:19:00-07:00)
+2026-07-06 16:19:00,077 - HVS-MainCore [INFO] (MainThread) - main:22 - Inicio de recordatorio de limpieza
+2026-07-06 16:19:00,077 - INFO - Inicio de recordatorio de limpieza
+2026-07-06 16:19:00,108 - INFO - file_cache is only supported with oauth2client<4.0.0
+2026-07-06 16:19:00,109 - INFO - Enviando mensaje al espacio: spaces/AAAA2B2J6s4
+2026-07-06 16:19:00,110 - INFO - Enviando mensaje al espacio: spaces/AAAA2B2J6s4
+2026-07-06 16:19:00,853 - INFO -    - Mensaje enviado con éxito. ID del mensaje: spaces/AAAA2B2J6s4/messages/wCZ4cuItsoE.wCZ4cuItsoE
+2026-07-06 16:19:00,853 - INFO -    - Mensaje enviado con éxito. ID del mensaje: spaces/AAAA2B2J6s4/messages/wCZ4cuItsoE.wCZ4cuItsoE
+2026-07-06 16:19:10,853 - HVS-MainCore [INFO] (MainThread) - main:25 - Recordatorio enviado
+2026-07-06 16:19:10,853 - INFO - Recordatorio enviado
+2026-07-06 16:19:10,853 - INFO - Job "clean (trigger: cron[hour='16', minute='19'], next run at: 2026-07-07 16:19:00 PDT)" executed successfully
+2026-07-06 16:19:40,932 - INFO - generated new fontManager
+2026-07-06 16:19:41,240 - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-07-06 16:19:41,241 - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-07-06 16:19:41,241 - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-07-06 16:19:41,241 - INFO - Added job "night_off" to job store "default"
+2026-07-06 16:19:41,241 - INFO - Added job "clean" to job store "default"
+2026-07-06 16:19:41,241 - INFO - Added job "kpi_report" to job store "default"
+2026-07-06 16:19:41,241 - INFO - Scheduler started
+2026-07-06 16:19:41,242 - HVS-MainCore [INFO] (MainThread) - main:51 - [START] AsyncIOScheduler iniciado.
+2026-07-06 16:19:41,242 - INFO - [START] AsyncIOScheduler iniciado.
+2026-07-06 16:20:12,148 - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-07-06 16:20:12,148 - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-07-06 16:20:12,148 - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-07-06 16:20:12,149 - INFO - Added job "night_off" to job store "default"
+2026-07-06 16:20:12,149 - INFO - Added job "clean" to job store "default"
+2026-07-06 16:20:12,149 - INFO - Added job "kpi_report" to job store "default"
+2026-07-06 16:20:12,149 - INFO - Scheduler started
+2026-07-06 16:20:12,149 - HVS-MainCore [INFO] (MainThread) - main:51 - [START] AsyncIOScheduler iniciado.
+2026-07-06 16:20:12,149 - INFO - [START] AsyncIOScheduler iniciado.
+2026-07-07 08:07:23,045 - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-07-07 08:07:23,045 - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-07-07 08:07:23,046 - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-07-07 08:07:23,046 - INFO - Added job "night_off" to job store "default"
+2026-07-07 08:07:23,046 - INFO - Added job "clean" to job store "default"
+2026-07-07 08:07:23,046 - INFO - Added job "kpi_report" to job store "default"
+2026-07-07 08:07:23,046 - INFO - Scheduler started
+2026-07-07 08:07:23,046 - HVS-MainCore [INFO] (MainThread) - main:51 - [START] AsyncIOScheduler iniciado.
+2026-07-07 08:07:23,046 - INFO - [START] AsyncIOScheduler iniciado.
+2026-07-07 08:12:30,999 - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-07-07 08:12:30,999 - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-07-07 08:12:30,999 - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-07-07 08:12:30,999 - INFO - Added job "night_off" to job store "default"
+2026-07-07 08:12:31,000 - INFO - Added job "clean" to job store "default"
+2026-07-07 08:12:31,000 - INFO - Added job "kpi_report" to job store "default"
+2026-07-07 08:12:31,000 - INFO - Scheduler started
+2026-07-07 08:12:31,000 - HVS-MainCore [INFO] (MainThread) - main:51 - [START] AsyncIOScheduler iniciado.
+2026-07-07 08:12:31,000 - INFO - [START] AsyncIOScheduler iniciado.
+2026-07-07 08:13:06,592 - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-07-07 08:13:06,592 - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-07-07 08:13:06,592 - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-07-07 08:13:06,592 - INFO - Added job "night_off" to job store "default"
+2026-07-07 08:13:06,593 - INFO - Added job "clean" to job store "default"
+2026-07-07 08:13:06,593 - INFO - Added job "kpi_report" to job store "default"
+2026-07-07 08:13:06,593 - INFO - Scheduler started
+2026-07-07 08:13:06,593 - HVS-MainCore [INFO] (MainThread) - main:51 - [START] AsyncIOScheduler iniciado.
+2026-07-07 08:13:06,593 - INFO - [START] AsyncIOScheduler iniciado.
+2026-07-07 08:13:20,908 - HVS-MainCore [ERROR] (MainThread) - main:51 - Falló el envío de notificación de inicio a Google Chat para 'HVS-MainCore': HTTPSConnectionPool(host='chat.googleapis.com', port=443): Read timed out. (read timeout=10)
+2026-07-07 08:13:20,908 - ERROR - Falló el envío de notificación de inicio a Google Chat para 'HVS-MainCore': HTTPSConnectionPool(host='chat.googleapis.com', port=443): Read timed out. (read timeout=10)

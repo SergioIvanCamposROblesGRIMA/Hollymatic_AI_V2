@@ -1,0 +1,131 @@
+# Usa la especificación Compose más reciente (no requiere la clave 'version' superior)
+services:
+  app:
+    # Configuración de la construcción de la imagen
+    build:
+      context: . # Directorio que contiene el Dockerfile y el código fuente
+      dockerfile: Dockerfile # Nombre del Dockerfile a usar
+
+    
+    # Nombre del contenedor (opcional, útil para referencias directas, pero puede causar conflictos si escalas)
+    container_name: HVS-SAFIA
+    
+    # Carga variables de entorno desde un archivo .env en el mismo directorio
+    env_file:
+      - .env
+      
+    # Define variables de entorno adicionales o sobrescribe las del env_file
+    environment:
+      - APP_PATH=/app # Ruta de la aplicación dentro del contenedor
+      - INSIDE_CONTAINER=true # Flag para indicar que se ejecuta en un contenedor
+      # --- RCLONE (valores en .env) ---
+      - RCLONE_CONFIG_GDRIVE_CLIENT_ID=${RCLONE_CONFIG_GDRIVE_CLIENT_ID}
+      - RCLONE_CONFIG_GDRIVE_CLIENT_SECRET=${RCLONE_CONFIG_GDRIVE_CLIENT_SECRET}
+      - RCLONE_CONFIG_GDRIVE_TEAM_DRIVE=${RCLONE_CONFIG_GDRIVE_TEAM_DRIVE}
+      # Ruta del Service Account dentro del contenedor
+      - RCLONE_CONFIG_GDRIVE_SERVICE_ACCOUNT_FILE=/secrets/service-account-file.json
+      # --------------------------------
+      # --- DB (el app registra los intentos en el contenedor `db`) ---
+      - DB_HOST=db
+      - DB_PORT=3306
+      - DB_NAME=${DB_NAME}
+      - DB_USER=${DB_USER}
+      - DB_PASSWORD=${DB_PASSWORD}
+      # --------------------------------
+
+    # Mapea dispositivos del host al contenedor (necesario para acceso a hardware como cámaras)
+    devices:
+      - "/dev/video0:/dev/video0"
+      #- "/dev/video2:/dev/video2"
+      #- "/dev/video4:/dev/video4"
+      
+    # Añade el usuario principal del contenedor al grupo 'video' del host (necesario para permisos de /dev/video*)
+    group_add:
+      - appuser # Asegúrate de que el usuario dentro del contenedor tenga permisos para este grupo
+
+    # Política de reinicio: Reinicia el contenedor a menos que se detenga explícitamente
+    restart: always
+
+    # Arranca después de la base de datos (orden de inicio; la escritura es best-effort)
+    depends_on:
+      - db
+
+    # Volúmenes: Mapea el código fuente local al contenedor para desarrollo (cambios en vivo)
+    # ATENCIÓN: Esto es ideal para desarrollo. Para producción, normalmente copias el código en la imagen durante el build.
+    volumes:
+      - ./app:/app # Mapea el directorio actual (.) del host a /app en el contenedor
+      - ./secrets:/app/secrets
+      # - datos_persistentes:/ruta/a/datos/persistentes # Descomenta y define si necesitas persistencia de datos
+      # - /ruta/host/logs:/app/logs # Ejemplo para mapear logs a una ruta específica del host
+
+  # Base de datos MySQL con el esquema horneado (db/init/01_schema.sql).
+  # Interna a la red de Docker: NO se publica el puerto al host.
+  db:
+    build:
+      context: ./db
+      dockerfile: Dockerfile
+    container_name: HVS-DB
+    restart: always
+    environment:
+      - MYSQL_ROOT_PASSWORD=${MYSQL_ROOT_PASSWORD}
+      - MYSQL_DATABASE=${DB_NAME}
+      - MYSQL_USER=${DB_USER}
+      - MYSQL_PASSWORD=${DB_PASSWORD}
+    volumes:
+      - db_data:/var/lib/mysql
+
+  # Agendador (APScheduler): apagado del KP200, recordatorio de limpieza y
+  # reporte mensual de KPIs (lee la DB por la red interna, DB_HOST=db).
+  scheduler:
+    build:
+      context: ./scheduler
+      dockerfile: Dockerfile
+    container_name: HVS-SCHEDULER
+    env_file:
+      - .env
+    environment:
+      - DB_HOST=db
+      - DB_PORT=3306
+      - DB_NAME=${DB_NAME}
+      - DB_USER=${DB_USER}
+      - DB_PASSWORD=${DB_PASSWORD}
+      - DRIVE_FOLDER_ID=${DRIVE_FOLDER_ID}
+      # SERVICE_ACCOUNT_PATH se hereda de .env
+    restart: always
+    depends_on:
+      - db
+    volumes:
+      - ./scheduler:/app          # código en vivo (igual patrón que app)
+      - ./secrets:/app/secrets    # SERVICE_ACCOUNT_PATH relativo a WORKDIR /app
+
+  # API de calibración remota (FastAPI): expone /auth/login, /auth/refresh y
+  # /calibrate (protegida). Controla el enchufe Kasa por la LAN (MIKASA_IP:9999).
+  # No necesita db, cámara ni GPIO.
+  api:
+    build:
+      context: ./api
+      dockerfile: Dockerfile
+    container_name: HVS-API
+    env_file:
+      - .env
+    environment:
+      - MIKASA_IP=${MIKASA_IP}
+      - MIKASA_USERNAME=${MIKASA_USERNAME}
+      - MIKASA_PASSWORD=${MIKASA_PASSWORD}
+      - JWT_SECRET_KEY=${JWT_SECRET_KEY}
+      - ACCESS_TOKEN_EXPIRE_MINUTES=${ACCESS_TOKEN_EXPIRE_MINUTES}
+      - REFRESH_TOKEN_EXPIRE_DAYS=${REFRESH_TOKEN_EXPIRE_DAYS}
+      - API_USERNAME=${API_USERNAME}
+      - API_PASSWORD=${API_PASSWORD}
+      - API_PASSWORD_HASH=${API_PASSWORD_HASH}
+    restart: always
+    ports:
+      - "81:8000"
+    volumes:
+      - ./api:/app                # código en vivo (mismo patrón que app/scheduler)
+
+volumes:
+  db_data: {}
+
+
+

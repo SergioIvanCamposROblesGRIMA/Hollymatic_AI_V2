@@ -1,0 +1,8 @@
+fastapi
+uvicorn[standard]
+python-multipart
+python-kasa==0.10.2
+python-jose[cryptography]
+bcrypt
+python-dotenv
+pydantic
